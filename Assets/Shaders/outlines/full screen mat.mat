@@ -41,7 +41,7 @@ Material:
     m_Floats:
     - _Activator: 0
     - _Activator_col: 1
-    - _Activator_out: 0
+    - _Activator_out: 1
     - _Color_Threshold: 0.6
     - _Normal_Treshold: 1
     - _OVERLAY: 1
