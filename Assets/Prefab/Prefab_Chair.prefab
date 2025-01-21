@@ -118,8 +118,104 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c4bfa0277a06941459c991ac88d9b5e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7938449622948526737}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c4bfa0277a06941459c991ac88d9b5e2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6252324645266159822}
   m_SourcePrefab: {fileID: 100100000, guid: c4bfa0277a06941459c991ac88d9b5e2, type: 3}
+--- !u!1 &2573877716813748773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c4bfa0277a06941459c991ac88d9b5e2,
+    type: 3}
+  m_PrefabInstance: {fileID: 3420811522496472948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &7938449622948526737
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2573877716813748773}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 51.27581, y: 107.819595, z: 58.577362}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6252324645266159822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2573877716813748773}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf29e8efc992324c9fe7149e3769caa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notes: 
+  transformToAffect: {fileID: 0}
+  axisToAffect: 3
+  animationDuration: 0.3
+  canBeOverwritten: 0
+  playOnStart: 1
+  playsEveryTime: 0
+  chanceToPlay: 0
+  canStretch: 0
+  initialScale: 1
+  maximumScale: 1.2
+  resetToInitialScaleAfterAnimation: 1
+  reverseAnimationCurveAfterPlaying: 1
+  squashAndStretchCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.25
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  looping: 1
+  loopingDelay: 0.3
+  _smokePoof: {fileID: 0}
 --- !u!4 &2950861102823129247 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c4bfa0277a06941459c991ac88d9b5e2,
