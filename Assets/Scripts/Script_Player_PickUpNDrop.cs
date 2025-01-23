@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Script_Player_PickUpNDrop : MonoBehaviour
@@ -11,21 +12,27 @@ public class Script_Player_PickUpNDrop : MonoBehaviour
     [SerializeField] private LayerMask PickUpLayerMask;
 
     private Script_ObjectGrabbable objectGrabbable;
+    public GameObject textGrabbed;
+
+    float pickUpDistance = 3f;
 
     private void Update()
     {
+       
+
         if (Input.GetKeyUp(KeyCode.E))
         {
+            textGrabbed.SetActive(false);
             if (objectGrabbable == null)
             {
 
-                float pickUpDistance = 2f;
 
                 if (Physics.Raycast(PlayerCameraTransform.position, PlayerCameraTransform.forward, out RaycastHit raycastHit, pickUpDistance, PickUpLayerMask))
                 {
                     if (raycastHit.transform.TryGetComponent(out objectGrabbable))
                     {
                         objectGrabbable.Grab(objectGrabPointTansform);
+
                     }
                 }
             }
@@ -36,4 +43,5 @@ public class Script_Player_PickUpNDrop : MonoBehaviour
             }
         }
     }
+    
 }

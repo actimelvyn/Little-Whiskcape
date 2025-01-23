@@ -7,10 +7,17 @@ public class Script_ObjectGrabbable : MonoBehaviour
 
     private Rigidbody objectRigidbody;
     private Transform objectGrabPointTansform;
+    //public GameObject textDrop;
+    public GameObject textGrab;
+    private void Start()
+    {
+    }
 
     private void Awake()
     {
         objectRigidbody = GetComponent<Rigidbody>();
+        textGrab.SetActive(false);
+
     }
 
     public void Grab(Transform objectGrabPointTansform)
@@ -40,4 +47,21 @@ public class Script_ObjectGrabbable : MonoBehaviour
             objectRigidbody.MovePosition(newPosition);
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            textGrab.SetActive(true);
+        }
+
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            textGrab.SetActive(false);
+        }
+
+    }
+
 }
