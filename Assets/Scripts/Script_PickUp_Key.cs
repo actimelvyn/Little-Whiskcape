@@ -8,6 +8,7 @@ public class Script_PickUP_Key : MonoBehaviour
     public bool interactable, toggle;
     public GameObject PickUpText;
     public Animator vaseAnim;
+    public Animator vaseAnim2;
     public GameObject fracturedVase;
     public GameObject intactVase;
     public bool canOpenDoor;
@@ -45,6 +46,7 @@ public class Script_PickUP_Key : MonoBehaviour
 
                 PickUpText.SetActive(false); // Hide the pickup text
                 vaseAnim.SetTrigger("pick_up"); // Trigger the vase animation
+                vaseAnim2.SetTrigger("pick_up"); // Trigger the vase animation
                 canOpenDoor = true;
                 if (canOpenDoor == true)
                 {
