@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class newDoor : MonoBehaviour
 {
     public GameObject intText;
     public bool interactable1, toggle;
     public Animator doorAnim;
+    public VisualEffect doorVFX;
     //public GameObject ColliderDis;
 
     // Reference to the Script_PickUp_Light script
@@ -49,7 +51,20 @@ public class newDoor : MonoBehaviour
         {
             doorAnim.SetTrigger("open");
             Destroy (intText);
+            PlayParticle();
 
         }
     }
+    public void PlayParticle()
+     {
+         // instantiate
+         VisualEffect newBurstEffect = Instantiate(doorVFX, transform.position, transform.rotation);
+        //
+
+        // play
+        newBurstEffect.Play();
+
+         // destroy
+         Destroy(newBurstEffect.gameObject, 5f);
+     }
 }

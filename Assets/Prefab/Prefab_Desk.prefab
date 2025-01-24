@@ -179,6 +179,11 @@ PrefabInstance:
       propertyPath: m_PropertySheet.m_NamedObject.m_Array.Array.data[0].m_Overridden
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7966600084064163744, guid: 28df923862b84b640a147dc4e7466576,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9045766908325356708, guid: 28df923862b84b640a147dc4e7466576,
         type: 3}
       propertyPath: m_LocalScale.x
