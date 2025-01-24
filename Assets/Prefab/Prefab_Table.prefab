@@ -55,7 +55,7 @@ MonoBehaviour:
   chanceToPlay: 0
   canStretch: 0
   initialScale: 1
-  maximumScale: 1.1
+  maximumScale: 1.3
   resetToInitialScaleAfterAnimation: 1
   reverseAnimationCurveAfterPlaying: 0
   squashAndStretchCurve:
@@ -93,7 +93,8 @@ MonoBehaviour:
     m_RotationOrder: 4
   looping: 1
   loopingDelay: 0.3
-  _smokePoof: {fileID: 0}
+  _smokePoof: {fileID: 7599595337151097708, guid: 28df923862b84b640a147dc4e7466576,
+    type: 3}
 --- !u!1001 &3035154092830532423
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   notes: 
   transformToAffect: {fileID: 0}
-  axisToAffect: 2
+  axisToAffect: 1
   animationDuration: 0.6
   canBeOverwritten: 0
   playOnStart: 1
@@ -56,7 +56,7 @@ MonoBehaviour:
   chanceToPlay: 0
   canStretch: 0
   initialScale: 1
-  maximumScale: 1.1
+  maximumScale: 1.2
   resetToInitialScaleAfterAnimation: 1
   reverseAnimationCurveAfterPlaying: 0
   squashAndStretchCurve:

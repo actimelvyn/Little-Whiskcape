@@ -135,9 +135,11 @@ public class Script_PickUp_bottle : MonoBehaviour
             screenOut.SetFloat("_Activator_out", 1.0f); // Set _Activator to true
             Debug.Log("out black");
         }
-        
 
 
+
+        Script_UI Script_UI = FindObjectOfType<Script_UI>();
+        Script_UI.AddStar();
 
         // Hide the bottle
         if (bottle != null) bottle.SetActive(false);

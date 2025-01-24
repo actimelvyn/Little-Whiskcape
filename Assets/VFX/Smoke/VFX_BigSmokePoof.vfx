@@ -213,7 +213,7 @@ MonoBehaviour:
       m_Type:
         m_SerializableType: System.Single, mscorlib, Version=4.0.0.0, Culture=neutral,
           PublicKeyToken=b77a5c561934e089
-      m_SerializableObject: 1.5
+      m_SerializableObject: 1.2
     m_Space: 2147483647
   m_Property:
     name: Delay
@@ -1545,7 +1545,7 @@ MonoBehaviour:
   m_Parent: {fileID: 114350483966674976}
   m_Children:
   - {fileID: 8926484042661614732}
-  m_UIPosition: {x: 1562, y: 640}
+  m_UIPosition: {x: 1562, y: 615}
   m_UICollapsed: 0
   m_UISuperCollapsed: 0
   m_InputSlots: []

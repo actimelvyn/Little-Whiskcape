@@ -94,17 +94,13 @@ public class Script_SquashNStretch : MonoBehaviour
         _squashAndStretchAllObjectsLikeThis -= PlaySquashAndStretch;
     }
 
-    private void Update()
-    {
-        if (playsEveryTime == true)
-            GetComponent<VisualEffect>().Play();
-    }
+
 
     private void Start()
     {
         if (playOnStart)
             CheckForAndStartCoroutine();
-        GetComponent<VisualEffect>().Stop();
+        _smokePoof.Play();
     }
 
     [ContextMenu("Play Squash and Stretch")]
@@ -114,18 +110,19 @@ public class Script_SquashNStretch : MonoBehaviour
             return;
 
         CheckForAndStartCoroutine();
+        //  PlayParticle();
     }
-    /* public void PlayParticle()
-     {
-         // instantiate
-         VisualEffect newBurstEffect = Instantiate(_smokePoof, transform.position, transform.rotation);
+   /* public void PlayParticle()
+    {
+        // instantiate
+        VisualEffect newBurstEffect = Instantiate(_smokePoof, transform.position, transform.rotation);
 
-         // play
-         newBurstEffect.Play();
+        // play
+        newBurstEffect.Play();
 
-         // destroy
-         Destroy(newBurstEffect.gameObject, 1.5f);
-     } */
+        // destroy
+        Destroy(newBurstEffect.gameObject, 1.5f);
+    } */
 
     //Start of the Coroutine
 
