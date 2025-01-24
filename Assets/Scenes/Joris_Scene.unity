@@ -5195,6 +5195,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8612654347186292549, guid: 3a43bb10a708be14aa192f4516566c18,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d5bac9a861ff084499ea952362b0ec1, type: 2}
     - target: {fileID: -4771542989081863625, guid: 3a43bb10a708be14aa192f4516566c18,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5213,11 +5218,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1531749130031401230, guid: 3a43bb10a708be14aa192f4516566c18,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 707138316}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a43bb10a708be14aa192f4516566c18, type: 3}
 --- !u!4 &707138314 stripped
 Transform:
@@ -5225,33 +5226,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 707138313}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &707138315 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1531749130031401230, guid: 3a43bb10a708be14aa192f4516566c18,
-    type: 3}
-  m_PrefabInstance: {fileID: 707138313}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &707138316
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707138315}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.5000002, y: 2.5, z: 0.19999999}
-  m_Center: {x: -0.7499999, y: 1.25, z: -0.099999994}
 --- !u!1 &718085271 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7665031999449572513, guid: 1a73c82bf67d3204b8eceb41cfcb5142,
@@ -9410,33 +9384,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5000004, y: 1.8, z: 0.30000004}
   m_Center: {x: 0, y: 0.9, z: 0.15000002}
---- !u!1 &1264991899 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1531749130031401230, guid: 3a43bb10a708be14aa192f4516566c18,
-    type: 3}
-  m_PrefabInstance: {fileID: 2033075574}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &1264991901
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1264991899}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.5000002, y: 2.5, z: 0.19999999}
-  m_Center: {x: -0.7499999, y: 1.25, z: -0.099999994}
 --- !u!1 &1304586598
 GameObject:
   m_ObjectHideFlags: 0
@@ -14146,6 +14093,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8612654347186292549, guid: 3a43bb10a708be14aa192f4516566c18,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6d5bac9a861ff084499ea952362b0ec1, type: 2}
     - target: {fileID: -4771542989081863625, guid: 3a43bb10a708be14aa192f4516566c18,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -14164,11 +14116,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1531749130031401230, guid: 3a43bb10a708be14aa192f4516566c18,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1264991901}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a43bb10a708be14aa192f4516566c18, type: 3}
 --- !u!4 &2041505561 stripped
 Transform:
