@@ -39,7 +39,7 @@ public class Script_PickUp_bottle : MonoBehaviour
                 Debug.LogError("SC_FPSController not found in the scene!");
             }
         }
-  
+
         // Temporarily disable movement
         SC_FPSController.walkingSpeed = 0;
         SC_FPSController.runningSpeed = 0;
@@ -135,9 +135,8 @@ public class Script_PickUp_bottle : MonoBehaviour
             screenOut.SetFloat("_Activator_out", 1.0f); // Set _Activator to true
             Debug.Log("out black");
         }
+        
 
-        Script_UI Script_UI = FindObjectOfType<Script_UI>();
-        Script_UI.AddStar();
 
 
         // Hide the bottle
