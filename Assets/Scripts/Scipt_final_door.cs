@@ -24,6 +24,8 @@ public class Script_Final_Door : MonoBehaviour
             Debug.Log("Player triggered the door. Opening door...");
 
             animator.SetTrigger("openDoor");
+            sceneManager SceneManager = FindObjectOfType<sceneManager>();
+            SceneManager.WinCondition();
 
         }
         else if (other.CompareTag("Player") && keyPickup.canOpenDoor == false)

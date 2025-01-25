@@ -43,7 +43,8 @@ public class Script_PickUP_Key : MonoBehaviour
                 }
 
                 keyOnPlayer.SetActive(true); // Activate the key on the player
-
+                Script_UI Script_UI = FindObjectOfType<Script_UI>();
+                Script_UI.AddStar();
                 PickUpText.SetActive(false); // Hide the pickup text
                 vaseAnim.SetTrigger("pick_up"); // Trigger the vase animation
                 vaseAnim2.SetTrigger("pick_up"); // Trigger the vase animation

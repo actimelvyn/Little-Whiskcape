@@ -52,7 +52,7 @@ public class newDoor : MonoBehaviour
             doorAnim.SetTrigger("open");
             Destroy (intText);
             PlayParticle();
-
+            
         }
     }
     public void PlayParticle()
@@ -66,5 +66,9 @@ public class newDoor : MonoBehaviour
 
          // destroy
          Destroy(newBurstEffect.gameObject, 5f);
-     }
+
+        Script_UI Script_UI = FindObjectOfType<Script_UI>();
+        Script_UI.AddStar();
+        interactable1 = false;
+    }
 }

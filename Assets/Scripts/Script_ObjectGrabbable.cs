@@ -52,6 +52,7 @@ public class Script_ObjectGrabbable : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             textGrab.SetActive(true);
+            Debug.Log("entered the stool");
         }
 
     }
