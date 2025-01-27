@@ -159,7 +159,7 @@ MonoBehaviour:
   chanceToPlay: 0
   canStretch: 0
   initialScale: 1
-  maximumScale: 1.5
+  maximumScale: 0.7
   resetToInitialScaleAfterAnimation: 1
   reverseAnimationCurveAfterPlaying: 0
   squashAndStretchCurve:

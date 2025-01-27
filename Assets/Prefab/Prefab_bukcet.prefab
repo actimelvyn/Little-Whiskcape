@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5600582682330810929}
+  - component: {fileID: 8314967747188341859}
   m_Layer: 0
   m_Name: Prefab_bukcet
   m_TagString: Untagged
@@ -32,6 +33,67 @@ Transform:
   - {fileID: 4394641107689150974}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8314967747188341859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1305291255435675500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: faf29e8efc992324c9fe7149e3769caa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  notes: 
+  transformToAffect: {fileID: 0}
+  axisToAffect: 2
+  animationDuration: 0.4
+  canBeOverwritten: 0
+  playOnStart: 1
+  playsEveryTime: 0
+  chanceToPlay: 0
+  canStretch: 0
+  initialScale: 1
+  maximumScale: 0.8
+  resetToInitialScaleAfterAnimation: 1
+  reverseAnimationCurveAfterPlaying: 0
+  squashAndStretchCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.55430883
+      value: 1.0221523
+      inSlope: 3.0926049
+      outSlope: 3.0926049
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.05233066
+      outWeight: 0.12612908
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  looping: 1
+  loopingDelay: 0.2
+  _smokePoof: {fileID: 0}
 --- !u!1001 &4284717308323659285
 PrefabInstance:
   m_ObjectHideFlags: 0
