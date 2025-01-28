@@ -55,6 +55,7 @@ public class Script_PickUP_Key : MonoBehaviour
                 }
 
                 keyOnPlayer.SetActive(true); // Activate the key on the player
+                canOpenDoor = true;
                 Script_UI Script_UI = FindObjectOfType<Script_UI>();
                 Script_UI.AddStar();
                 PickUpText.SetActive(false); // Hide the pickup text
@@ -62,7 +63,6 @@ public class Script_PickUP_Key : MonoBehaviour
                 vaseAnim2.SetTrigger("pick_up"); // Trigger the vase animation
                 vaseAnim3.SetTrigger("pick_up"); // Trigger the vase animation
                 vaseAnim4.SetTrigger("pick_up"); // Trigger the vase animation
-                canOpenDoor = true;
                 if (canOpenDoor == true)
                 {
                     print("key!");

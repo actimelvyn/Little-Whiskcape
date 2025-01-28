@@ -141,6 +141,8 @@ public class Script_PickUp_bottle : MonoBehaviour
         Script_UI Script_UI = FindObjectOfType<Script_UI>();
         Script_UI.AddStar();
 
+        SoundManager soundManager = FindObjectOfType<SoundManager>();
+        soundManager.PlayBackgroundMusic(); 
         // Hide the bottle
         if (bottle != null) bottle.SetActive(false);
 
