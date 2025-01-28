@@ -23,6 +23,7 @@ public class Script_PickUP_Key : MonoBehaviour
     public bool canOpenDoor;
     public VisualEffect vaseVFX;
     public GameObject vase;
+    public Timer Timer;
 
     public float delayBeforeBreaking = 5f; // Delay in seconds before breaking
     private bool isBreaking = false;
@@ -114,6 +115,10 @@ public class Script_PickUP_Key : MonoBehaviour
         //this.gameObject.SetActive(false);
         this.GetComponent<MeshRenderer>().enabled = false;
         Destroy(PickUpText);
-    
+        Script_UI Script_UI = FindObjectOfType<Script_UI>();
+        Script_UI.timeLeft = 15f;
+
+        Timer.timeRemaining = 15f;
+
     }
 }

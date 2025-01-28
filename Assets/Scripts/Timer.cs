@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour
 {
-    public float timeLimit = 1180f; // Set time limit in seconds
-    private float timeRemaining;
+    public float timeLimit = 180f; // Set time limit in seconds
+    public float timeRemaining;
 
     public sceneManager sceneController; // Reference to the SceneController
 

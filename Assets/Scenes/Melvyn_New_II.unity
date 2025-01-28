@@ -2401,7 +2401,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: df16c9f290802e34ba6cfae8382ea1ae, type: 2}
+      objectReference: {fileID: 2100000, guid: ceb80393212390d46bbabe24cfb77760, type: 2}
     - target: {fileID: 919132149155446097, guid: 1a73c82bf67d3204b8eceb41cfcb5142,
         type: 3}
       propertyPath: m_Name
@@ -4614,6 +4614,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1379514064}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &467115641 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8149914154677085025, guid: 36bf90c9537ae944b801591d57741187,
+    type: 3}
+  m_PrefabInstance: {fileID: 1246048021073712137}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6749f3e9285b5ce42bf4f235064f2332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &472280981
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5334,7 +5346,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -14.442322, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &559295742
@@ -7402,7 +7414,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: df16c9f290802e34ba6cfae8382ea1ae, type: 2}
+      objectReference: {fileID: 2100000, guid: ceb80393212390d46bbabe24cfb77760, type: 2}
     - target: {fileID: 919132149155446097, guid: 1a73c82bf67d3204b8eceb41cfcb5142,
         type: 3}
       propertyPath: m_Name
@@ -10116,7 +10128,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: df16c9f290802e34ba6cfae8382ea1ae, type: 2}
+      objectReference: {fileID: 2100000, guid: ceb80393212390d46bbabe24cfb77760, type: 2}
     - target: {fileID: 919132149155446097, guid: 1a73c82bf67d3204b8eceb41cfcb5142,
         type: 3}
       propertyPath: m_Name
@@ -11494,6 +11506,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: grp_SmallWindow
       objectReference: {fileID: 0}
+    - target: {fileID: 3230986803760498898, guid: 3a43bb10a708be14aa192f4516566c18,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 032941532cd378742853f1e2d13dc7c4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12026,6 +12043,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: grp_SmallWindow (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3230986803760498898, guid: 3a43bb10a708be14aa192f4516566c18,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 032941532cd378742853f1e2d13dc7c4, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12198,7 +12220,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -14.442322, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1549183382
@@ -13200,6 +13222,7 @@ MonoBehaviour:
   canOpenDoor: 0
   vaseVFX: {fileID: 0}
   vase: {fileID: 0}
+  Timer: {fileID: 467115641}
   delayBeforeBreaking: 3
 --- !u!4 &1695716033 stripped
 Transform:

@@ -17,7 +17,7 @@ public class Script_UI : MonoBehaviour
     public GameObject fifteenSecImage; // GameObject for 15 seconds left
 
     private int filledStars = 0;
-    private float timeLeft = 180f; // 3 minutes in seconds
+    public float timeLeft = 180f; // 3 minutes in seconds
     private bool isTimerRunning = false;
 
     void Start()
