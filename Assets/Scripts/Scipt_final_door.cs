@@ -19,7 +19,7 @@ public class Script_Final_Door : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         print("enter");
-        if (other.CompareTag("Player") && keyPickup != null && keyPickup.canOpenDoor)
+        if (other.CompareTag("Player") && keyPickup.canOpenDoor)
         {
             Debug.Log("Player triggered the door. Opening door...");
 
