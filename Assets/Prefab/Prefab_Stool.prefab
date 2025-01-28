@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13198c6b17a49744add0ba60d9cd398, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textDrop: {fileID: 0}
   textGrab: {fileID: 253868619371568798, guid: 337f561bf0c76f84ea8d32c11ee4567d, type: 3}
 --- !u!65 &745611635328467376
 BoxCollider:
@@ -194,7 +195,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 1a627d12f8f679e47b7a1f152284cca2,
         type: 3}
       propertyPath: m_Materials.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 1a627d12f8f679e47b7a1f152284cca2,
         type: 3}
@@ -210,7 +211,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[2]
       value: 
-      objectReference: {fileID: 2100000, guid: 77b64602b46ba0d4895592fb30e0475a, type: 2}
+      objectReference: {fileID: 2100000, guid: 334a87e2a98934d4e8acfe381a8625e0, type: 2}
     - target: {fileID: -7511558181221131132, guid: 1a627d12f8f679e47b7a1f152284cca2,
         type: 3}
       propertyPath: m_Materials.Array.data[3]
