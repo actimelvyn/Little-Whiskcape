@@ -7,16 +7,17 @@ public class Script_ObjectGrabbable : MonoBehaviour
 
     private Rigidbody objectRigidbody;
     private Transform objectGrabPointTansform;
-    //public GameObject textDrop;
+    public GameObject textDrop;
     public GameObject textGrab;
     private void Start()
     {
+        objectRigidbody = GetComponent<Rigidbody>();
+        textGrab.SetActive(false);
     }
 
     private void Awake()
     {
-        objectRigidbody = GetComponent<Rigidbody>();
-        textGrab.SetActive(false);
+        
 
     }
 

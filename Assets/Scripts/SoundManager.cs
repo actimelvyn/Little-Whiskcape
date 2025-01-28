@@ -15,6 +15,8 @@ public class SoundManager : MonoBehaviour
     public AudioClip sentenceAfterBreak;
 
     [Header("3D Sound Effects")]
+    public AudioClip sfxCap;
+    public AudioClip sfxDrinking;
     public AudioClip sfxAfterDrinking;
     public AudioClip boingFurniture;
     public AudioClip cracklingFire;
