@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class Script_PickUP_Key : MonoBehaviour
 {
@@ -9,9 +10,19 @@ public class Script_PickUP_Key : MonoBehaviour
     public GameObject PickUpText;
     public Animator vaseAnim;
     public Animator vaseAnim2;
+    public Animator vaseAnim3;
+    public Animator vaseAnim4;
     public GameObject fracturedVase;
+    public GameObject fracturedVase2;
+    public GameObject fracturedVase3;
+    public GameObject fracturedVase4;
     public GameObject intactVase;
+    public GameObject intactVase2;
+    public GameObject intactVase3;
+    public GameObject intactVase4;
     public bool canOpenDoor;
+    public VisualEffect vaseVFX;
+    public GameObject vase;
 
     public float delayBeforeBreaking = 5f; // Delay in seconds before breaking
     private bool isBreaking = false;
@@ -48,14 +59,29 @@ public class Script_PickUP_Key : MonoBehaviour
                 PickUpText.SetActive(false); // Hide the pickup text
                 vaseAnim.SetTrigger("pick_up"); // Trigger the vase animation
                 vaseAnim2.SetTrigger("pick_up"); // Trigger the vase animation
+                vaseAnim3.SetTrigger("pick_up"); // Trigger the vase animation
+                vaseAnim4.SetTrigger("pick_up"); // Trigger the vase animation
                 canOpenDoor = true;
                 if (canOpenDoor == true)
                 {
                     print("key!");
                 }
                 isBreaking = true; // Mark as breaking to prevent duplicate triggers
+                PlayParticle();
             }
         }
+    }
+    public void PlayParticle()
+    {
+        // instantiate
+        VisualEffect newBurstEffect = Instantiate(vaseVFX, vase.transform.position, vase.transform.rotation);
+        //
+
+        // play
+        newBurstEffect.Play();
+
+        // destroy
+       // Destroy(newBurstEffect.gameObject, 10f);
     }
 
     private void OnTriggerExit(Collider other)
@@ -75,7 +101,13 @@ public class Script_PickUP_Key : MonoBehaviour
 
         // Replace the intact vase with the fractured one
         if (intactVase != null) intactVase.SetActive(false);
+        if (intactVase2 != null) intactVase2.SetActive(false);
+        if (intactVase3 != null) intactVase3.SetActive(false);
+        if (intactVase4 != null) intactVase4.SetActive(false);
         if (fracturedVase != null) fracturedVase.SetActive(true);
+        if (fracturedVase2 != null) fracturedVase2.SetActive(true);
+        if (fracturedVase3 != null) fracturedVase3.SetActive(true);
+        if (fracturedVase4 != null) fracturedVase4.SetActive(true);
 
         // Optionally destroy this script
         //Destroy(this); // Removes the script from the GameObject
