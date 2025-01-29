@@ -18,6 +18,8 @@ public class sceneManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
         print("loaded " + sceneName);
+        Cursor.visible = true; // Make cursor visible
+        Cursor.lockState = CursorLockMode.None; // Unlock the cursor
     }
 
     // Method to quit the game
@@ -30,14 +32,28 @@ public class sceneManager : MonoBehaviour
     public void GameOver()
     {
         SceneManager.LoadScene("DeathMenu");
+        Cursor.visible = true; // Make cursor visible
+        Cursor.lockState = CursorLockMode.None; // Unlock the cursor
     }
 
     // Example: Trigger Win Condition scene
     public void WinCondition()
     {
         SceneManager.LoadScene("WinMenu");
+        Cursor.visible = true; // Make cursor visible
+        Cursor.lockState = CursorLockMode.None; // Unlock the cursor
     }
 
- 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape)) // Check if ESC is pressed
+        {
+            Application.Quit(); // Quit the application
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false; // Stop play mode in the editor
+#endif
+        }
+    }
+
 }
 

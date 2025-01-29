@@ -33,6 +33,8 @@ public class Script_Final_Door : MonoBehaviour
             fpscController.runningSpeed = 0;
             fpscController.jumpSpeed = 0;
             // Start the Coroutine to delay the door action
+            Timer timer = FindObjectOfType<Timer>();
+            timer.timeRemaining = 15f;
             StartCoroutine(DelayDoorAction());  // seconds delay
            // sceneManager SceneManager = FindObjectOfType<sceneManager>();
           //  SceneManager.WinCondition();
