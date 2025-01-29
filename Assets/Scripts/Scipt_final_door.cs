@@ -26,7 +26,12 @@ public class Script_Final_Door : MonoBehaviour
             Debug.Log("Player triggered the door. Opening door...");
 
             animator.SetTrigger("openDoor");
+            // Temporarily disable movement //icit
+            SC_FPSController fpscController= FindObjectOfType<SC_FPSController>();
 
+            fpscController.walkingSpeed = 0;
+            fpscController.runningSpeed = 0;
+            fpscController.jumpSpeed = 0;
             // Start the Coroutine to delay the door action
             StartCoroutine(DelayDoorAction());  // seconds delay
            // sceneManager SceneManager = FindObjectOfType<sceneManager>();
