@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;  // Needed for Coroutines
 
 public class Script_Final_Door : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class Script_Final_Door : MonoBehaviour
     private Animator animator;          
     private Collider doorCollider;
     public GameObject intText;
+    public float waitTime;
 
 
     private void Start()
@@ -24,8 +26,11 @@ public class Script_Final_Door : MonoBehaviour
             Debug.Log("Player triggered the door. Opening door...");
 
             animator.SetTrigger("openDoor");
-            sceneManager SceneManager = FindObjectOfType<sceneManager>();
-            SceneManager.WinCondition();
+
+            // Start the Coroutine to delay the door action
+            StartCoroutine(DelayDoorAction());  // seconds delay
+           // sceneManager SceneManager = FindObjectOfType<sceneManager>();
+          //  SceneManager.WinCondition();
 
         }
         else if (other.CompareTag("Player") && keyPickup.canOpenDoor == false)
@@ -39,5 +44,16 @@ public class Script_Final_Door : MonoBehaviour
     {
         intText.SetActive(false);
 
+    }
+
+    // Coroutine to delay the door action
+    IEnumerator DelayDoorAction()
+    {
+        yield return new WaitForSeconds(waitTime); // Wait for 'delay' seconds
+
+        // Now perform the door action after the delay
+        animator.SetTrigger("openDoor");
+        sceneManager SceneManager = FindObjectOfType<sceneManager>();
+        SceneManager.WinCondition();
     }
 }
