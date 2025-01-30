@@ -50,6 +50,8 @@ public class newDoor : MonoBehaviour
         if (interactable1 && Input.GetKeyUp(KeyCode.E) && scriptPickUpBottle.drank)
         {
             doorAnim.SetTrigger("open");
+            
+
             Destroy (intText);
             PlayParticle();
             
@@ -70,5 +72,17 @@ public class newDoor : MonoBehaviour
         Script_UI Script_UI = FindObjectOfType<Script_UI>();
         Script_UI.AddStar();
         interactable1 = false;
+
+        StartCoroutine(PlayDoor());
+
+
+    }
+    private IEnumerator PlayDoor()
+    {
+        // Wait for 3 seconds before playing the sound
+        yield return new WaitForSeconds(1f);
+
+        // Play the door sound
+        GetComponent<AudioSource>().Play();
     }
 }

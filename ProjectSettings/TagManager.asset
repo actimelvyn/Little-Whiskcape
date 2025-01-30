@@ -8,6 +8,7 @@ TagManager:
   - BW
   - Joueur
   - Hardwood
+  - Vase
   layers:
   - Default
   - TransparentFX

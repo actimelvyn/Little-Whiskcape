@@ -58,6 +58,7 @@ public class Script_PickUP_Key : MonoBehaviour
                 canOpenDoor = true;
                 Script_UI Script_UI = FindObjectOfType<Script_UI>();
                 Script_UI.AddStar();
+
                 PickUpText.SetActive(false); // Hide the pickup text
                 vaseAnim.SetTrigger("pick_up"); // Trigger the vase animation
                 vaseAnim2.SetTrigger("pick_up"); // Trigger the vase animation
@@ -99,7 +100,7 @@ public class Script_PickUP_Key : MonoBehaviour
         // Wait for the specified delay
         yield return new WaitForSeconds(delayBeforeBreaking);
         Debug.Log("Breaking vase after delay");
-
+        PlayVaseBreakSound();
         // Replace the intact vase with the fractured one
         if (intactVase != null) intactVase.SetActive(false);
         if (intactVase2 != null) intactVase2.SetActive(false);
@@ -120,5 +121,46 @@ public class Script_PickUP_Key : MonoBehaviour
 
         Timer.timeRemaining = 15f;
 
+    }
+
+    private IEnumerator vaseJump()
+    {
+        yield return new WaitForSeconds(0f);
+
+        //PlayVaseJumpSound();
+
+    }
+
+    public void PlayVaseJumpSound()
+    {
+        // Find all instances of the prefab (all vases)
+        GameObject[] allVases = GameObject.FindGameObjectsWithTag("Vase");
+
+        foreach (GameObject vase in allVases)
+        {
+            // Get the AudioSource component on the prefab instance
+            AudioSource source = vase.GetComponent<AudioSource>();
+
+            if (source != null)
+            {
+                source.Play();
+            }
+        }
+    }
+
+
+    public void PlayVaseBreakSound()
+    {
+        // Find all AudioSource components in the scene
+        AudioSource[] allAudioSources = FindObjectsOfType<AudioSource>();
+
+        foreach (AudioSource source in allAudioSources)
+        {
+            // Check if the AudioClip matches "vaseJump"
+            if (source.clip != null && source.clip.name == "vaseBreak")
+            {
+                source.Play();
+            }
+        }
     }
 }
