@@ -19,7 +19,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip sfxDrinking;
     public AudioClip sfxAfterDrinking;
     public AudioClip boingFurniture;
-    public AudioClip cracklingFire;
+    //public AudioClip cracklingFire;
     public AudioClip vaseBreak;
 
     private bool musicSpedUp = false; // To prevent setting the pitch repeatedly
@@ -66,7 +66,7 @@ public class SoundManager : MonoBehaviour
     {
         if (backgroundMusicSource != null)
         {
-            backgroundMusicSource.pitch = 1.6f; // Make the music 1.6 times faster
+            backgroundMusicSource.pitch = 1.3f; // Make the music 1.6 times faster
             musicSpedUp = true; // Prevent repeated calls
         }
     }
@@ -94,10 +94,10 @@ public class SoundManager : MonoBehaviour
         source.Play();
     }
 
-    public void PlayCracklingFire(GameObject fireObject)
+    /*public void PlayCracklingFire(GameObject fireObject)
     {
         PlaySfxOnObject(fireObject, cracklingFire);
-    }
+    }*/
 
     public void PlayVaseBreak(GameObject vaseObject)
     {

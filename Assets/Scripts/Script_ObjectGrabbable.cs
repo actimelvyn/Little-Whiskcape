@@ -4,21 +4,17 @@ using UnityEngine;
 
 public class Script_ObjectGrabbable : MonoBehaviour
 {
-
     private Rigidbody objectRigidbody;
     private Transform objectGrabPointTansform;
     public GameObject textDrop;
     public GameObject textGrab;
+
+    private static bool isTextDisplayed = false; // Shared across all objects
+
     private void Start()
     {
         objectRigidbody = GetComponent<Rigidbody>();
         textGrab.SetActive(false);
-    }
-
-    private void Awake()
-    {
-        
-
     }
 
     public void Grab(Transform objectGrabPointTansform)
@@ -40,30 +36,29 @@ public class Script_ObjectGrabbable : MonoBehaviour
         if (objectGrabPointTansform != null)
         {
             objectRigidbody.freezeRotation = true;
-            //objectRigidbody.freezePosition = false;
-
-
             float lerpSpeed = 8f;
             Vector3 newPosition = Vector3.Lerp(transform.position, objectGrabPointTansform.position, Time.deltaTime * lerpSpeed);
             objectRigidbody.MovePosition(newPosition);
         }
     }
+
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isTextDisplayed)
         {
             textGrab.SetActive(true);
-            Debug.Log("entered the stool");
+            isTextDisplayed = true; // Mark text as active
+            Debug.Log("Text displayed for: " + gameObject.name);
         }
-
     }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             textGrab.SetActive(false);
+            isTextDisplayed = false; // Allow other objects to display text
+            Debug.Log("Text hidden for: " + gameObject.name);
         }
-
     }
-
 }

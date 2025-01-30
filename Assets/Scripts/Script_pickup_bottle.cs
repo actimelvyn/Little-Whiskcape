@@ -90,6 +90,7 @@ public class Script_PickUp_bottle : MonoBehaviour
             {
                 // Trigger drinking animation
                 if (bottleAnim != null) bottleAnim.SetTrigger("drink");
+                GetComponent<AudioSource>().Play();
 
                 StartCoroutine(GoToDrunk(0.565f, 1.5f)); // Fade in to 1 over 1.5 seconds
                 StartCoroutine(DrinkEffectAfterDelay()); // Start the coroutine

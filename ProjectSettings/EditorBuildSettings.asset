@@ -20,7 +20,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Joris_Scene.unity
     guid: ad116beaf448c6143a86370940b00c82
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Melvyn_New_III.unity
     guid: 105f7bfd45249b2468dda83919a83bcf
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 67e5f66f94eb1234b974e2ac4fd9ecfc
   m_configObjects: {}
