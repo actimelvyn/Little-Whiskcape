@@ -13381,8 +13381,8 @@ MonoBehaviour:
   defwalkingSpeed: 3
   runningSpeed: 4
   defrunningSpeed: 4
-  jumpSpeed: 2
-  defjumpSpeed: 2
+  jumpSpeed: 4
+  defjumpSpeed: 4
   gravity: 20
   playerCamera: {fileID: 1609097025}
   lookSpeed: 2
