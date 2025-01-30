@@ -1571,8 +1571,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 83d1e02fe2dcca843b2f474583343ed6, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 0f92e91b4e008dc47afc14b439deef3b, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -13381,8 +13381,8 @@ MonoBehaviour:
   defwalkingSpeed: 3
   runningSpeed: 4
   defrunningSpeed: 4
-  jumpSpeed: 6
-  defjumpSpeed: 6
+  jumpSpeed: 2
+  defjumpSpeed: 2
   gravity: 20
   playerCamera: {fileID: 1609097025}
   lookSpeed: 2
@@ -25943,17 +25943,22 @@ PrefabInstance:
     - target: {fileID: 4129859640398145500, guid: 7cf94a3c84e99834f9a8b16f9c53ae4e,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.8111113
+      value: 1.1099744
       objectReference: {fileID: 0}
     - target: {fileID: 4129859640398145500, guid: 7cf94a3c84e99834f9a8b16f9c53ae4e,
         type: 3}
       propertyPath: m_Size.z
-      value: 0.4338222
+      value: 1.0430443
+      objectReference: {fileID: 0}
+    - target: {fileID: 4129859640398145500, guid: 7cf94a3c84e99834f9a8b16f9c53ae4e,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.40273625
       objectReference: {fileID: 0}
     - target: {fileID: 4129859640398145500, guid: 7cf94a3c84e99834f9a8b16f9c53ae4e,
         type: 3}
       propertyPath: m_Center.z
-      value: 0.1215599
+      value: 0.42617106
       objectReference: {fileID: 0}
     - target: {fileID: 4129859640398145500, guid: 7cf94a3c84e99834f9a8b16f9c53ae4e,
         type: 3}
